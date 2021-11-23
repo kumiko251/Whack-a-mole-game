@@ -29,7 +29,7 @@ function showMole() {
 function start() {
     score = 0;
     currentTime = 15;
-    moleTimer = setInterval(showMole, 800);
+    moleTimer = setInterval(showMole, 850);
     timeTimer = setInterval(countTime, 1200);
 
     timeCounter.innerText = currentTime;
@@ -38,6 +38,7 @@ function start() {
 
 start();
 // Hit the mole
+
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
