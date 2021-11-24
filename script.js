@@ -12,7 +12,7 @@ const clickme = document.getElementById("clickme")
 let score = 0;
 let currentBox = 0;
 let isLocked = false;
-let currentTime = 15;
+let currentTime = 20;
 
 function showMole() {
     boxes.forEach((box) => {
@@ -28,8 +28,8 @@ function showMole() {
 
 function start() {
     score = 0;
-    currentTime = 15;
-    moleTimer = setInterval(showMole, 850);
+    currentTime = 20;
+    moleTimer = setInterval(showMole, 800);
     timeTimer = setInterval(countTime, 1200);
 
     timeCounter.innerText = currentTime;
